@@ -17,6 +17,7 @@ body {
   width: 454px;
   height: 926px;
   border-radius: 30px;
+  position: relative;
 }
 .statusTop {
   margin: 39px 5px 0px 30px;
@@ -77,27 +78,44 @@ body {
 }
 .buttons .AC {
   color: black;
+  background: rgba(165, 165, 165, 1);
+  cursor: pointer;
+  border: 1px solid rgb(97, 97, 97);
 }
 .buttons .hasahNemeh {
   color: black;
+  background: rgba(165, 165, 165, 1);
+  cursor: pointer;
+  border: 1px solid rgb(97, 97, 97);
 }
 .buttons .vlHuwaah {
   color: black;
+  background: rgba(165, 165, 165, 1);
+  cursor: pointer;
+  border: 1px solid rgb(97, 97, 97);
 }
 .buttons p {
-  /* background: rgba(165, 165, 165, 1); */
   background: rgba(51, 51, 51, 1);
   width: 88px;
   height: 88px;
   opacity: 1;
   border-radius: 352px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 510;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgb(97, 97, 97);
 }
 .frame4 {
   width: 88px;
   height: 394px;
-  top: 356px;
-  left: 17px;
   opacity: 1;
   gap: 14px;
   display: flex;
@@ -115,7 +133,39 @@ body {
   gap: 14px;
   flex-direction: column;
 }
+.frame1 > .naluuZuraas,
+.vrjih,
+.hasah,
+.nemeh,
+.tentsuu {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  width: 88px;
+  height: 88px;
+  opacity: 1;
+  border-radius: 352px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 510;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgb(97, 97, 97);
+  background-color: var(--Accents-Orange, rgba(255, 141, 40, 1));
+}
+.frame1 {
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+}
 .teg {
+  cursor: pointer;
+  border: 1px solid rgb(97, 97, 97);
   background: rgba(51, 51, 51, 1);
   width: 190px;
   height: 88px;
@@ -124,6 +174,34 @@ body {
   position: absolute;
   opacity: 1;
   border-radius: 352px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
 
   color: white;
+}
+.hariu {
+  width: 394px;
+  height: 107px;
+  top: 239px;
+  left: 20px;
+  opacity: 1;
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: 274;
+  font-size: 90px;
+  line-height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: auto;
+  white-space: nowrap;
 }

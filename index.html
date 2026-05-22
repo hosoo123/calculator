@@ -18,33 +18,34 @@
       </div>
       <div class="buttons">
         <div class="frame4">
-          <p class="AC">AC</p>
-          <p class="7">7</p>
-          <p class="4">4</p>
-          <p class="1">1</p>
+          <p onclick="remove()" class="AC">AC</p>
+          <p onclick="clickNumber(7)" class="7">7</p>
+          <p onclick="clickNumber(4)" class="4">4</p>
+          <p onclick="clickNumber(1)" class="1">1</p>
         </div>
-        <div class="teg">0</div>
+        <div onclick="clickNumber(0)" class="teg">0</div>
         <div class="frame3">
-          <p class="hasahNemeh">±</p>
-          <p class="8">8</p>
-          <p class="5">5</p>
-          <p class="2">2</p>
+          <p onclick="hasahNemeh()" class="hasahNemeh">±</p>
+          <p onclick="clickNumber(8)" class="8">8</p>
+          <p onclick="clickNumber(5)" class="5">5</p>
+          <p onclick="clickNumber(2)" class="2">2</p>
         </div>
         <div class="frame2">
-          <p class="vlHuwaah">%</p>
-          <p class="9">9</p>
-          <p class="6">6</p>
-          <p class="3">3</p>
-          <p class="taslal">,</p>
+          <p onclick="huwi()" class="vlHuwaah">%</p>
+          <p onclick="clickNumber(9)" class="9">9</p>
+          <p onclick="clickNumber(6)" class="6">6</p>
+          <p onclick="clickNumber(3)" class="3">3</p>
+          <p onclick="taslal()" class="taslal">.</p>
         </div>
-        <div class="frame2">
-          <p class="naluuZuraas">/</p>
-          <p class="*">*</p>
-          <p class="hasah">-</p>
-          <p class="nemeh">+</p>
-          <p class="tentsuu">=</p>
+        <div class="frame1">
+          <div onclick="vildel(`/`)" class="naluuZuraas">/</div>
+          <div onclick="vildel(`*`)" class="vrjih">*</div>
+          <div onclick="vildel(`-`)" class="hasah">-</div>
+          <div onclick="vildel(`+`)" class="nemeh">+</div>
+          <div onclick="tentsvv(`=`)" class="tentsuu">=</div>
         </div>
       </div>
+      <div id="display" class="hariu">0</div>
     </div>
     <script src="./index.js"></script>
   </body>
