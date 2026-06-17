@@ -20,42 +20,51 @@ function taslal() {
 }
 
 function hasahNemeh() {
-  current = Number(current) * -1;
-  display.textContent = current;
-}
-
-function vildel(param) {
-  hadgalsan = Number(current);
-  current = "";
-  temdeg = param;
-}
-
-function tentsvv() {
-  if (temdeg == "+") {
-    sum = hadgalsan + Number(current);
-    display.textContent = sum;
-  } else if (temdeg == "*") {
-    sum = hadgalsan * Number(current);
-    display.textContent = sum;
-  } else if (temdeg == "/") {
-    sum = hadgalsan / Number(current);
-    display.textContent = sum;
-  } else if (temdeg == "%") {
-    sum = hadgalsan / 100;
-    display.textContent = sum;
-  } else if ((temdeg = "-")) {
-    sum = hadgalsan - Number(current);
-    display.textContent = sum;
+  if (current !== "") {
+    current = String(Number(current) * -1);
+    display.textContent = current;
   }
 }
 
+function vildel(param) {
+  if (current !== "") {
+    hadgalsan = Number(current);
+    current = "";
+    temdeg = param;
+  }
+}
+
+function tentsvv() {
+  let sum = 0;
+  let bidentoiToo = Number(current);
+
+  if (temdeg === "+") {
+    sum = hadgalsan + bidentoiToo;
+  } else if (temdeg === "*") {
+    sum = hadgalsan * bidentoiToo;
+  } else if (temdeg === "/") {
+    sum = hadgalsan / bidentoiToo;
+  } else if (temdeg === "%") {
+    sum = hadgalsan % bidentoiToo;
+  } else if (temdeg === "-") {
+    sum = hadgalsan - bidentoiToo;
+  }
+
+  display.textContent = sum;
+  current = String(sum);
+  temdeg = "";
+}
+
 function huwi() {
-  current = Number(current) / 100;
-  display.textContent = current;
+  if (current !== "") {
+    current = String(Number(current) / 100);
+    display.textContent = current;
+  }
 }
 
 function remove() {
-  display.textContent = 0;
+  display.textContent = "0";
   current = "";
   hadgalsan = 0;
+  temdeg = "";
 }
